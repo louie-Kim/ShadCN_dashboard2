@@ -534,7 +534,7 @@ export function AppSidebar() {
                 className="w-[--radix-popper-anchor-width]"
                 // className="w-[15rem]"
               >
-                <div className="flex flex-col items-start gap-1">
+                <div className="flex flex-col items-start gap-1 px-2">
                   <div className="flex items-center gap-2 p-1">
                     <Avatar className="rounded-md">
                       <AvatarImage
