@@ -1,0 +1,27 @@
+<ThemeProvider> → Context 생성
+        ↓
+useTheme() 훅 → Context 읽기 및 상태 변경
+        ↓
+setTheme("light") → 상태 업데이트
+        ↓
+<html class="light"> 변경됨
+        ↓
+Tailwind CSS의 light/dark 스타일 자동 적용
+
+
+------------------------------------------------------------
+
+
+layout.tsx - <html lang="en"> : light
+NavBar.tsx + <html lang="en" class="dark" style="color-scheme: dark"> : dark
+
+불일치 -> hydration mismatch 에러 -> 해결: suppressHydrationWarning
+
+
+
+
+
+
+
+
+
