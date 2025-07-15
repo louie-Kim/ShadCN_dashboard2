@@ -32,7 +32,6 @@ const chartConfig = {
     label: "Revenue",
     // color: "var(--chart-3)",
   },
-  
 } satisfies ChartConfig;
 
 const chartData = [
@@ -55,6 +54,7 @@ const AppLineBarChart = () => {
     <div>
       <h1 className="text-lg font-medium mb-6">Total Revenue</h1>
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+        {/*ComposedChart: bar + line chart 믹스 가능 */}
         <ComposedChart accessibilityLayer data={chartData}>
           <CartesianGrid vertical={false} />
           <XAxis
@@ -71,7 +71,7 @@ const AppLineBarChart = () => {
           <Bar
             //chartData.pageViews 참조
             dataKey="pageViews"
-            fill="var(--chart-4)"
+            fill="var(--custom-chart6)"
             radius={4}
             barSize={12}
           />
@@ -80,31 +80,35 @@ const AppLineBarChart = () => {
             //chartData.clicks 참조
             dataKey="clicks"
             type="linear"
-            stroke="var(--chart-2)"
+            stroke="var(--custom-chart7)"
             strokeWidth={2}
             dot={true}
           />
+          
+          <defs>
+            {/* id="revGradient" -> Area.fill="url(#revGradient)" */}
+            <linearGradient id="revGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--chart-1)" stopOpacity={0.3} />
+              <stop offset="100%" stopColor="var(--chart-1)" stopOpacity={0} />
+            </linearGradient>
+          </defs>
 
-          {/* <Area
+          <Area
             type="linear"
-            key="revenue-area" // 유니크 키 지정
             dataKey="revenue"
-            stroke="var(--chart-3)"
-            fill="var(--chart-3)"
-            fillOpacity={0.2} // 투명도 조절
-            strokeWidth={0} // 테두리 선 감추기
-            legendType="none" // 레전드에 표시 안 함
-          /> */}
-
-          <Line
+            stroke="none"
+            fill="url(#revGradient)"
+            baseValue="dataMin"
+          />
+          {/* <Line
             //chartData.revenue 참조
             dataKey="revenue"
             type="linear"
-            stroke="var(--chart-3)"
+            stroke="var(--chart-1)"
             strokeWidth={2}
-            dot={true}
+            dot={false}
             strokeDasharray="4 2" // ← 이 부분이 점선 설정 4px 선, 2px 공백 반복
-          />
+          /> */}
         </ComposedChart>
       </ChartContainer>
     </div>

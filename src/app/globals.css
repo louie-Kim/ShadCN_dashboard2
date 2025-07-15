@@ -42,7 +42,8 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   /*  add custom color  */
-  --color-fuck: var(--custom-color);
+  --color-chart7: var(--custom-chart7);
+  --color-chart6: var(--custom-chart6);
 }
 
 :root {
@@ -80,7 +81,8 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   /* add custom color */
-  --custom-color: oklch(65.295% 0.17437 149.722);
+  --custom-chart7: oklch(74.373% 0.1504 146.748);
+  --custom-chart6: oklch(59.675% 0.11126 286.847);
 }
 
 .dark {
@@ -116,7 +118,8 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
   /* add custom color */
-  --custom-color: oklch(65.295% 0.17437 149.722);
+  --custom-chart7: oklch(74.373% 0.1504 146.748);
+  --custom-chart6: oklch(59.675% 0.11126 286.847);
 }
 
 @layer base {
