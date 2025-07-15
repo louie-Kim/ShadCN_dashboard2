@@ -37,8 +37,7 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import EditUser from "@/components/EditUser";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import AppLineChart  from "@/components/AppLineChart";
-import AppLineBarChart from "@/components/AppLineChart";
+import AppLineBarChart from "@/components/AppLineBarChart";
 
 // http://localhost:3000/users/[username] : dynamic route
 const SingleUserPage = () => {
