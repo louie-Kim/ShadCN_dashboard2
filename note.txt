@@ -19,6 +19,13 @@ NavBar.tsx + <html lang="en" class="dark" style="color-scheme: dark"> : dark
 
 
 
+----------------------------------------------------------------------
+
+
+md:768 사이드바 브레이크 포인트 
+
+
+
 
 
 

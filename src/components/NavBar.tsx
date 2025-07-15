@@ -16,6 +16,7 @@ import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { SidebarTrigger } from "./ui/sidebar";
 
 const NavBar = () => {
   // theme :
@@ -23,9 +24,9 @@ const NavBar = () => {
   const [position, setPosition] = useState("light");
 
   return (
-    <nav className="p-4 flex items-center justify-between gap-10">
+    <nav className="p-4 flex items-center justify-between sticky top-0 backdrop-blur z-10 gap-10">
       {/* LEFT */}
-      Collapse button
+      <SidebarTrigger />
       {/* RIGHT */}
       <div className="flex items-center gap-8">
         <Link href="/">DashBoard</Link>
