@@ -97,7 +97,7 @@ const TodoList = () => {
             <div className="flex items-center gap-2">
               <Checkbox id="items1" />
               <label htmlFor="items1" className="text-sm text-muted-foreground">
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>
@@ -105,7 +105,7 @@ const TodoList = () => {
             <div className="flex items-center gap-2">
               <Checkbox id="items2" checked/>
               <label htmlFor="items2" className="text-sm text-muted-foreground">
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>
@@ -113,7 +113,7 @@ const TodoList = () => {
             <div className="flex items-center gap-2">
               <Checkbox id="items3" checked/>
               <label htmlFor="items3" className="text-sm text-muted-foreground">
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>
@@ -121,7 +121,7 @@ const TodoList = () => {
             <div className="flex items-center gap-2">
               <Checkbox id="items4" />
               <label htmlFor="items4" className="text-sm text-muted-foreground">
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>
@@ -129,7 +129,7 @@ const TodoList = () => {
             <div className="flex items-center gap-2">
               <Checkbox id="items5" />
               <label htmlFor="items5" className="text-sm text-muted-foreground">
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>
@@ -137,7 +137,7 @@ const TodoList = () => {
             <div className="flex items-center gap-2">
               <Checkbox id="items6" />
               <label htmlFor="items6" className="text-sm text-muted-foreground">
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>
@@ -145,7 +145,7 @@ const TodoList = () => {
             <div className="flex items-center gap-2">
               <Checkbox id="items7" />
               <label htmlFor="items7" className="text-sm text-muted-foreground">
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>
@@ -153,7 +153,7 @@ const TodoList = () => {
             <div className="flex items-center gap-2">
               <Checkbox id="items8" />
               <label htmlFor="items8" className="text-sm text-muted-foreground">
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>
@@ -161,7 +161,7 @@ const TodoList = () => {
             <div className="flex items-center gap-2">
               <Checkbox id="items9" />
               <label htmlFor="items9" className="text-sm text-muted-foreground">
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>
@@ -172,7 +172,7 @@ const TodoList = () => {
                 htmlFor="items10"
                 className="text-sm text-muted-foreground"
               >
-                ?????????????????
+                TodoList
               </label>
             </div>
           </Card>

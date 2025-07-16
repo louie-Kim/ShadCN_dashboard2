@@ -93,14 +93,14 @@ const AppLineBarChart = () => {
             </linearGradient>
           </defs>
 
-          <Area
+          {/* <Area
             type="linear"
             dataKey="revenue"
             stroke="none"
             fill="url(#revGradient)"
             baseValue="dataMin"
-          />
-          {/* <Line
+          /> */}
+          <Line
             //chartData.revenue 참조
             dataKey="revenue"
             type="linear"
@@ -108,7 +108,7 @@ const AppLineBarChart = () => {
             strokeWidth={2}
             dot={false}
             strokeDasharray="4 2" // ← 이 부분이 점선 설정 4px 선, 2px 공백 반복
-          /> */}
+          />
         </ComposedChart>
       </ChartContainer>
     </div>
