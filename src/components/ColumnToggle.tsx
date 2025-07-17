@@ -26,7 +26,7 @@ export function DataTableViewOptions<TData>({
         <Button
           variant="destructive"
           size="sm"
-          className="ml-3 hidden h-8 lg:flex mr-auto py-[4px]"
+          className="ml-3 h-8 mr-auto py-[4px]"
         >
           <Settings2 />
           View

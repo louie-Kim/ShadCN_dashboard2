@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  BadgeDollarSign,
   BarChart2,
   Bell,
   Calendar,
@@ -44,6 +45,7 @@ import {
   SidebarHeader,
   SidebarMenu,
   SidebarMenuAction,
+  SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarMenuSub,
@@ -69,14 +71,14 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 // Menu items.
 const items = [
   {
-    title: "Home",
-    url: "#",
-    icon: Home,
+    title: "User",
+    url: "/users/test",
+    icon: User2,
   },
   {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
+    title: "Payments",
+    url: "/payments",
+    icon: BadgeDollarSign,
   },
   {
     title: "Calendar",
@@ -175,7 +177,7 @@ export function AppSidebar() {
                         <PlusCircle />
                         <span className="truncate">Add team</span>
                       </div>
-                       <ScanSearch />
+                      <ScanSearch />
                     </div>
                   </DropdownMenuItem>
                 </div>
@@ -185,6 +187,28 @@ export function AppSidebar() {
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
+        {/* Group -0 : link to Approuter -------------------------------------------- */}
+        <SidebarGroup>
+          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {items.map((item) => (
+                <SidebarMenuItem key={item.title}>
+                  {/* asChild : no default wrapper -> directly use childs */}
+                  <SidebarMenuButton asChild>
+                    <Link href={item.url}>
+                      <item.icon />
+                      <span>{item.title}</span>
+                    </Link>
+                  </SidebarMenuButton>
+                  {item.title === "Payments" && (
+                    <SidebarMenuBadge>24</SidebarMenuBadge>
+                  )}
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
         {/* Group -1 : Collapsible SidebarMenu ----------------------------------------*/}
         <SidebarGroup>
           <SidebarMenu>
